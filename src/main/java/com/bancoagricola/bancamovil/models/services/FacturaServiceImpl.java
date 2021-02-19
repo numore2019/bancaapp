@@ -34,5 +34,7 @@ public class FacturaServiceImpl implements IFacturaService{
 		facturaDao.deleteById(id);
 		
 	}
+	
+	// Comentario nuevo
 
 }
