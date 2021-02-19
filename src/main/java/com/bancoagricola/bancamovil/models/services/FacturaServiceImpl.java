@@ -16,25 +16,22 @@ public class FacturaServiceImpl implements IFacturaService{
 
 	@Override
 	public List<Factura> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return (List<Factura>) facturaDao.findAll();
 	}
 
 	@Override
 	public Factura findById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return facturaDao.findById(id).orElse(null);
 	}
 
 	@Override
-	public Factura save(Factura cliente) {
-		// TODO Auto-generated method stub
-		return null;
+	public Factura save(Factura factura) {
+		return facturaDao.save(factura);
 	}
 
 	@Override
 	public void delete(int id) {
-		// TODO Auto-generated method stub
+		facturaDao.deleteById(id);
 		
 	}
 
